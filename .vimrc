@@ -23,3 +23,5 @@ if has('gui_running')
   let g:solarized_termcolors=256
   colorscheme solarized
 endif
+
+command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))
