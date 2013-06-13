@@ -32,6 +32,7 @@ setopt correct
 setopt list_packed
 setopt noautoremoveslash
 setopt nolistbeep
+setopt nobeep
 
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
