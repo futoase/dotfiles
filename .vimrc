@@ -3,6 +3,16 @@ set guifont=Andale\ Mono:h20
 set clipboard=unnamed
 set number
 set nocompatible
+set wildmenu
+set autoread
+set wrapscan
+set incsearch
+set hlsearch
+set showcmd
+set showmode
+set display=uhex
+set cursorline
+
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
