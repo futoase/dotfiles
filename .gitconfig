@@ -1,0 +1,15 @@
+[alias]
+	co = checkout
+	br = branch
+	st = status
+        lg = log --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        clean = 'clean --dry-run'
+[user]
+	name = futoase
+	mail = futoase@gmail.com
+	email = futoase@gmail.com
+[core]
+	editor = mvim -f
+[color]
+	diff = true
