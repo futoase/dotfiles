@@ -23,6 +23,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/opsplorer'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'ecomba/vim-ruby-refactoring'
 
 syntax enable
 
