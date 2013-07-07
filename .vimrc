@@ -25,6 +25,7 @@ Bundle 'vim-scripts/nginx.vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'rking/ag.vim'
 
 syntax enable
 
