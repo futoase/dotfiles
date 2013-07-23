@@ -1,0 +1,11 @@
+*~
+*.swp
+*.swo
+*.bak
+*.old
+.vim/bundle
+.git
+jquery-*.js
+jquery.js
+*.egg
+*.egg-info

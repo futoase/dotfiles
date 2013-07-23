@@ -79,6 +79,10 @@ alias reload="source ~/.zshrc"
 alias vi="mvim"
 alias vim="mvim"
 
+# ag
+alias ag='ag -S --stats'
+alias agh='ag --hidden'
+
 unset LSCOLORS
 case "${TERM}" in
 xterm)
