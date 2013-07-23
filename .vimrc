@@ -26,6 +26,7 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'rking/ag.vim'
 Bundle 'Shougo/neocomplcache'
+Bundle 'vim-scripts/sudo.vim'
 
 syntax enable
 
