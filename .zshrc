@@ -80,7 +80,7 @@ alias vi="mvim"
 alias vim="mvim"
 
 # ag
-alias ag='ag -S --stats --pager "less -F"'
+alias ag='ag -S --stats'
 alias agh='ag --hidden'
 
 unset LSCOLORS
