@@ -114,4 +114,8 @@ kterm*|xterm*)
   ;;
 esac
 
+# local setting
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+# test
+[ -f ~/.zshrc.test ] && source ~/.zshrc.test
+
