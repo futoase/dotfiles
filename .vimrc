@@ -69,3 +69,19 @@ let g:syntastic_mode_map = { 'mode': 'passive',
             \  'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_quiet_warnings = 0
+
+" empty file is auto remove.
+augroup BUFWRITE_POSTDELETE
+  au!
+  autocmd BufWritePost * call BufWritePostDelete()
+augroup END
+
+function! BufWritePostDelete()
+  let crlen = 0
+  if &binary == 0
+    let crlen = &ff=='dos' ? 2 : 1
+  endif
+  if getfsize(expand('%:p')) <= crlen
+    call delete(expand('%:p'))
+  endif
+endfunction
