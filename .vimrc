@@ -89,3 +89,7 @@ endfunction
 " use f command then IME off.
 nnoremap <silent> f :set iminsert=0<CR>f
 nnoremap <silent> F :set iminsert=0<CR>F
+
+" emphansized tab and new line.
+set list
+set listchars=eol:¶,tab:>.
