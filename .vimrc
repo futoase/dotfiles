@@ -28,6 +28,8 @@ Bundle 'rking/ag.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'Shougo/neocomplcache'
 Bundle 'vim-scripts/sudo.vim'
+Bundle 'Shougo/vimfiler'
+Bundle 'Shougo/unite.vim'
 
 syntax enable
 
