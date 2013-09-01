@@ -13,23 +13,30 @@ set showmode
 set display=uhex
 set cursorline
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"neobundle
+"
+filetype plugin indent off
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-scripts/opsplorer'
-Bundle 'vim-scripts/nginx.vim'
-Bundle 'leafgarland/typescript-vim'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'rking/ag.vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'Shougo/neocomplcache'
-Bundle 'vim-scripts/sudo.vim'
-Bundle 'Shougo/vimfiler'
-Bundle 'Shougo/unite.vim'
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'vim-scripts/opsplorer'
+NeoBundle 'vim-scripts/nginx.vim'
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'ecomba/vim-ruby-refactoring'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'vim-scripts/sudo.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'Shougo/unite.vim'
+
+filetype plugin indent on
 
 syntax enable
 
