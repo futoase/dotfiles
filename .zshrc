@@ -76,6 +76,9 @@ alias su="su -l"
 
 alias reload="source ~/.zshrc"
 
+# add datetime
+alias history="history -i" 
+
 alias vi="mvim"
 alias vim="mvim"
 
