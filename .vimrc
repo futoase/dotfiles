@@ -35,6 +35,9 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Lokaltog/powerline'
 
 filetype plugin indent on
 
@@ -102,3 +105,8 @@ nnoremap <silent> F :set iminsert=0<CR>F
 " emphansized tab and new line.
 set list
 set listchars=eol:¶,tab:>.
+
+" Powerline
+set laststatus=2
+set rtp+=~/.vim/neobundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
