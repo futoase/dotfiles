@@ -104,7 +104,7 @@ nnoremap <silent> F :set iminsert=0<CR>F
 
 " emphansized tab and new line.
 set list
-set listchars=eol:¶,tab:>.
+set listchars=eol:\¶
 
 " Powerline
 set laststatus=2
