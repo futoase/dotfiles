@@ -41,6 +41,11 @@ NeoBundle 'Lokaltog/powerline'
 
 filetype plugin indent on
 
+set autoindent 
+set shiftwidth=2
+set tabstop=2
+set expandtab
+
 syntax enable
 
 if has('gui_running')
@@ -104,7 +109,7 @@ nnoremap <silent> F :set iminsert=0<CR>F
 
 " emphansized tab and new line.
 set list
-set listchars=eol:\¶
+set listchars=eol:¶,tab:>.
 
 " Powerline
 set laststatus=2
