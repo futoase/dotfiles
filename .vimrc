@@ -38,6 +38,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/powerline'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on
 
