@@ -57,3 +57,7 @@ my dotfiles.
 ------------
 
 [zshell](http://www.zsh.org/) setting file. (local)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/futoase/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
