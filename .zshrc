@@ -74,6 +74,8 @@ alias df="df -h"
 
 alias su="su -l"
 
+alias fullpath="find `pwd` -maxdepth 1 -mindepth 1"
+
 alias reload="source ~/.zshrc"
 
 # add datetime
