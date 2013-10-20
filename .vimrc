@@ -12,6 +12,7 @@ set showcmd
 set showmode
 set display=uhex
 set cursorline
+set spell
 
 "neobundle
 "
@@ -112,7 +113,21 @@ nnoremap <silent> F :set iminsert=0<CR>F
 set list
 set listchars=eol:¶,tab:>.
 
-" Powerline
+" Powerlne
 set laststatus=2
 set rtp+=~/.vim/neobundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
+
+" spell check ascii code only
+fun! s:SpellConf()
+  set spell
+  syntax spell notoplevel
+  syntax match SpellNotAscii /\<\A\+\>/ contains=@NoSpell transparent
+  syntax match SpellMaybeCode /\<\h\l*[_A-Z]\h\{-}\>/ contains=@NoSpell transparent
+  syntax cluster Spell add=SpellNotAscii,SpellMaybeCode
+endfunc
+
+augroup spell_check
+  autocmd!
+  autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
+augroup END
