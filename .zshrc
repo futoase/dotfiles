@@ -86,6 +86,8 @@ alias vim="mvim"
 alias ag='ag -S --stats'
 alias agh='ag --hidden'
 
+alias rm='echo "This is not the command you are looking for."; false'
+
 unset LSCOLORS
 case "${TERM}" in
 xterm)
