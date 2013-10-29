@@ -46,6 +46,6 @@ function rbenv
   end
 end
 
-alias ll ls -la
+alias ll "ls -la"
 alias vi mvim
 alias vim mvim
