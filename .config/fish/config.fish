@@ -4,7 +4,7 @@ set PATH $PATH /usr/local/share/python /usr/local/share/python3
 set PATH $PATH /usr/local/share/pypy /usr/local/Cellar/php54/5.4.16/bin
 set PATH $PATH $HOME/local/packer /usr/local/opt/gnu-sed/libexec/gnubin
 
-set GOPATH $GOPATH $HOME/go
+set -x GOPATH $HOME/go
 set PATH $PATH $HOME/go/bin
 
 set PATH $PATH $HOME/.rbenv/bin $HOME/.rbenv/shims 
