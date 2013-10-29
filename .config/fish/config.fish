@@ -45,3 +45,15 @@ function rbenv
       command rbenv $command $args
   end
 end
+
+function ll
+  ls -la
+end
+
+function vi
+  gvim
+end
+
+function vim
+  gvim
+end
