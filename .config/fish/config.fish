@@ -46,14 +46,6 @@ function rbenv
   end
 end
 
-function ll
-  ls -la
-end
-
-function vi
-  gvim
-end
-
-function vim
-  gvim
-end
+alias ll ls -la
+alias vi mvim
+alias vim mvim

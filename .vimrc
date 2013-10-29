@@ -1,3 +1,5 @@
+set shell=/bin/sh
+
 set guifont=Andale\ Mono:h20
 
 set clipboard=unnamed
