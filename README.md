@@ -3,6 +3,13 @@ dotfiles
 
 my dotfiles.
 
+This repository assumes to be used of [homesick](https://github.com/technicalpickles/homesick).
+
+.config/fish
+-------------
+
+[fish](http://fishshell.com/) setting file.
+
 .ipython
 --------
 
