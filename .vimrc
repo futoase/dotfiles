@@ -42,6 +42,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'elixir-lang/vim-elixir'
 
 filetype plugin indent on
 
