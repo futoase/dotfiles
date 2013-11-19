@@ -134,3 +134,5 @@ augroup spell_check
   autocmd!
   autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
 augroup END
+
+autocmd BufNewFile,BufRead *.cap set filetype=ruby
