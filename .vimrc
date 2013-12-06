@@ -136,3 +136,4 @@ augroup spell_check
 augroup END
 
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
+let g:NERDTreeShowHidden=1
