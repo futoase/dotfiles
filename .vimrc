@@ -138,4 +138,5 @@ augroup END
 
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
 
+autocmd BufNewFile,BufRead *.cap set filetype=ruby
 let g:NERDTreeShowHidden=1
