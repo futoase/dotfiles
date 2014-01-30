@@ -43,6 +43,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'honza/dockerfile.vim'
 
 filetype plugin indent on
 
@@ -134,6 +135,8 @@ augroup spell_check
   autocmd!
   autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
 augroup END
+
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
 
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
 let g:NERDTreeShowHidden=1
