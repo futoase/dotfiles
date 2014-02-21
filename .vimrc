@@ -44,6 +44,7 @@ NeoBundle 'Lokaltog/powerline'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'honza/dockerfile.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
 
@@ -140,3 +141,11 @@ au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfil
 
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
 let g:NERDTreeShowHidden=1
+
+" vim indent-guides
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_start_level = 1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#2f4f4f ctermbg=242
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#008080 ctermbg=247
