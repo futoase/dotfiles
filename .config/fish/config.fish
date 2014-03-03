@@ -3,6 +3,7 @@ set PATH $PATH $HOME/bin $HOME/local/bin $HOME/Library/Haskell/bin
 set PATH $PATH /usr/local/share/python /usr/local/share/python3
 set PATH $PATH /usr/local/share/pypy /usr/local/Cellar/php54/5.4.16/bin
 set PATH $PATH $HOME/local/packer /usr/local/opt/gnu-sed/libexec/gnubin
+set PATH $PATH $HOME/local/cocos2d-x-2.2.2/tools/project-creator
 
 set PATH $PATH $HOME/.plenv/bin
 plenv rehash > /dev/null ^&1
