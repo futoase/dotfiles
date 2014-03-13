@@ -4,7 +4,11 @@ set PATH $PATH /usr/local/share/python /usr/local/share/python3
 set PATH $PATH /usr/local/share/pypy /usr/local/Cellar/php54/5.4.16/bin
 set PATH $PATH $HOME/local/packer /usr/local/opt/gnu-sed/libexec/gnubin
 set PATH $PATH $HOME/local/cocos2d-x-2.2.2/tools/project-creator
+<<<<<<< HEAD
 set PATH $PATH /usr/local/bin
+=======
+set -x DOCKER_HOST 'tcp://localhost:4243'
+>>>>>>> ae81f2ad345056e0293be9f642f840515ff05ecb
 
 set PATH $PATH $HOME/.plenv/bin
 plenv rehash > /dev/null ^&1
