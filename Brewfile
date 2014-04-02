@@ -12,6 +12,7 @@ install macvim
 install fish
 install tmux
 install git
+install tig
 install scala
 install sbcl
 install elixir
