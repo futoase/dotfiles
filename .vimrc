@@ -45,6 +45,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'honza/dockerfile.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 
