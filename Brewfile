@@ -12,6 +12,8 @@ install macvim
 install fish
 install tmux
 install git
+install git-flow
+install tig
 install scala
 install sbcl
 install elixir
@@ -25,3 +27,8 @@ cask install limechat
 cask install evernote
 cask install sublime-text
 cask install dropbox
+
+# julia
+install gfortran
+tap staticfloat/julia
+install --64bit julia
