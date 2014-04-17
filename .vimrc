@@ -155,3 +155,5 @@ au BufNewFile,BufRead *.py set nowrap tabstop=2 softtabstop=2 shiftwidth=2
 
 " docker file
 autocmd BufNewFile,BufReadPost Dockerfile set filetype=sh
+
+set wrap
