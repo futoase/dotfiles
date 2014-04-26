@@ -93,7 +93,7 @@ inoremap <expr><C-e> neocomplcache#cancel_popup()
 let g:syntastic_mode_map = { 'mode': 'passive',
             \  'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_quiet_warnings = 0
+let g:syntastic_quiet_messages = { 'level': 'warnings' }
 
 " empty file is auto remove.
 augroup BUFWRITE_POSTDELETE
