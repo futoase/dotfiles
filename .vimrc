@@ -46,6 +46,7 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'honza/dockerfile.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
