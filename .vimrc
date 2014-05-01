@@ -46,6 +46,7 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'honza/dockerfile.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
@@ -93,7 +94,7 @@ inoremap <expr><C-e> neocomplcache#cancel_popup()
 let g:syntastic_mode_map = { 'mode': 'passive',
             \  'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_quiet_warnings = 0
+let g:syntastic_quiet_messages = { 'level': 'warnings' }
 
 " empty file is auto remove.
 augroup BUFWRITE_POSTDELETE
