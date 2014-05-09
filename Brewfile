@@ -17,6 +17,7 @@ install tig
 install scala
 install sbcl
 install elixir
+install ansible
 
 cask install iterm2
 cask install java
