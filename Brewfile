@@ -28,6 +28,7 @@ cask install limechat
 cask install evernote
 cask install sublime-text
 cask install dropbox
+cask install skitch
 
 # julia
 install gfortran
