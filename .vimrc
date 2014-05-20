@@ -47,6 +47,7 @@ NeoBundle 'honza/dockerfile.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'chase/vim-ansible-yaml'
 
 filetype plugin indent on
 
