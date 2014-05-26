@@ -54,6 +54,7 @@ NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rake'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'chase/vim-ansible-yaml'
 
 filetype plugin indent on
 
