@@ -47,6 +47,13 @@ NeoBundle 'honza/dockerfile.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'JuliaLang/julia-vim'
+NeoBundle 'mklabs/grunt.vim'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-rake'
+NeoBundle 'dag/vim-fish'
+NeoBundle 'ekalinin/Dockerfile.vim'
 
 filetype plugin indent on
 
