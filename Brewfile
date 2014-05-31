@@ -19,6 +19,7 @@ install scala
 install sbcl
 install elixir
 install ansible
+install hg
 
 cask install iterm2
 cask install java
