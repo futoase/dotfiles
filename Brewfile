@@ -20,6 +20,7 @@ install sbcl
 install elixir
 install ansible
 install hg
+install reattach-to-user-namespace
 
 cask install iterm2
 cask install java
