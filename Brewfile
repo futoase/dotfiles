@@ -9,6 +9,7 @@ tap homebrew/binary || true
 install packer
 
 install python
+install gcc
 install macvim
 install fish
 install tmux
