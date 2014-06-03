@@ -9,6 +9,7 @@ tap homebrew/binary || true
 install packer
 
 install python
+install gcc
 install macvim
 install fish
 install tmux
@@ -23,6 +24,7 @@ install hg
 install plenv
 install rbenv
 install ruby-build
+install reattach-to-user-namespace
 
 cask install iterm2
 cask install java
