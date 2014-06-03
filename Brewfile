@@ -20,6 +20,9 @@ install sbcl
 install elixir
 install ansible
 install hg
+install plenv
+install rbenv
+install ruby-build
 
 cask install iterm2
 cask install java
