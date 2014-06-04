@@ -22,6 +22,7 @@ install elixir
 install ansible
 install hg
 install reattach-to-user-namespace
+install wget
 
 cask install iterm2
 cask install java
