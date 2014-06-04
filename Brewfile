@@ -21,6 +21,9 @@ install sbcl
 install elixir
 install ansible
 install hg
+install plenv
+install rbenv
+install ruby-build
 install reattach-to-user-namespace
 install wget
 
