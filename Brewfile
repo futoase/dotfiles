@@ -26,6 +26,7 @@ install rbenv
 install ruby-build
 install reattach-to-user-namespace
 install wget
+install hub
 
 cask install iterm2
 cask install java
