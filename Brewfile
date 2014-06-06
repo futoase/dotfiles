@@ -27,6 +27,8 @@ install ruby-build
 install reattach-to-user-namespace
 install wget
 install hub
+install the_silver_searcher
+install mutt
 
 cask install iterm2
 cask install java
