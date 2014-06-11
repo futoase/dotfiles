@@ -29,6 +29,8 @@ install wget
 install hub
 install the_silver_searcher
 install mutt
+install imagemagick
+install ttyrec
 
 cask install iterm2
 cask install java
