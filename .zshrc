@@ -126,3 +126,4 @@ esac
 # test
 [ -f ~/.zshrc.test ] && source ~/.zshrc.test
 
+source ~/.fzf.zsh
