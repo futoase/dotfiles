@@ -7,6 +7,8 @@ set PATH $PATH /usr/local/bin
 set PATH $PATH $HOME/Library/Python/2.7/bin/
 set -x DOCKER_HOST 'tcp://localhost:4243'
 
+set -x EDITOR vim
+
 set PATH $PATH $HOME/.plenv/bin
 plenv rehash > /dev/null ^&1
 

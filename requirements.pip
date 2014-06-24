@@ -1,0 +1,8 @@
+Powerline==beta
+Powerline-font-patcher==beta
+fontforge==1.0
+mercurial==3.0.1
+percol==0.0.7
+psutil==2.1.1
+vboxapi==1.0
+wsgiref==0.1.2
