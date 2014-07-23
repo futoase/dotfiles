@@ -59,6 +59,7 @@ NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'yoppi/fluentd.vim'
 NeoBundle 'chrisbra/Recover.vim'
 NeoBundle 'raichoo/purescript-vim'
+NeoBundle 'kurayama/systemd-vim-syntax'
 
 filetype plugin indent on
 
