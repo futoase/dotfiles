@@ -2,8 +2,7 @@ update
 upgrade
 cleanup
 
-install caskroom/cask/brew-cask
-
+install caskroom/cask/brew-cask || true
 install homebrew/binary/packer
 
 install python
@@ -29,6 +28,7 @@ install the_silver_searcher
 install mutt
 install imagemagick
 install ttyrec
+install ffmpeg
 
 cask install iterm2
 cask install java
@@ -43,6 +43,6 @@ cask install skitch
 
 # julia
 install gcc
-tap staticfloat/julia
-tap homebrew/versions
+tap staticfloat/julia || true
+tap homebrew/versions || true
 install --64bit julia
