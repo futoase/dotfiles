@@ -29,6 +29,7 @@ install mutt
 install imagemagick
 install ttyrec
 install ffmpeg
+install jq
 
 cask install iterm2
 cask install java
