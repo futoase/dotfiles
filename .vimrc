@@ -62,6 +62,9 @@ NeoBundle 'raichoo/purescript-vim'
 NeoBundle 'kurayama/systemd-vim-syntax'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+NeoBundle 'xolox/vim-session'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 filetype plugin indent on
 
