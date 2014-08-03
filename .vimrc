@@ -63,6 +63,7 @@ NeoBundle 'kurayama/systemd-vim-syntax'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 NeoBundle 'xolox/vim-session'
+NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 
