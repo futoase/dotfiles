@@ -30,6 +30,7 @@ install imagemagick
 install ttyrec
 install ffmpeg
 install jq
+install go
 
 cask install iterm2
 cask install java

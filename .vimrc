@@ -66,6 +66,7 @@ NeoBundle 'xolox/vim-session'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'cespare/vim-toml'
 
 filetype plugin indent on
 
