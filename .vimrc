@@ -68,6 +68,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'dart-lang/dart-vim-plugin'
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on
 
