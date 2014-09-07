@@ -67,6 +67,7 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'cespare/vim-toml'
+NeoBundle 'dart-lang/dart-vim-plugin'
 
 filetype plugin indent on
 
@@ -179,3 +180,4 @@ au BufNewFile,BufRead *.py set nowrap tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufNewFile,BufReadPost Dockerfile set filetype=sh
 
 set wrap
+let g:session_autosave = 'no'
