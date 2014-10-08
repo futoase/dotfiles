@@ -61,6 +61,15 @@ NeoBundle 'chrisbra/Recover.vim'
 NeoBundle 'raichoo/purescript-vim'
 NeoBundle 'kurayama/systemd-vim-syntax'
 NeoBundle 'AndrewRadev/vim-eco'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+NeoBundle 'xolox/vim-session'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'cespare/vim-toml'
+NeoBundle 'dart-lang/dart-vim-plugin'
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on
 
@@ -173,3 +182,4 @@ au BufNewFile,BufRead *.py set nowrap tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufNewFile,BufReadPost Dockerfile set filetype=sh
 
 set wrap
+let g:session_autosave = 'no'

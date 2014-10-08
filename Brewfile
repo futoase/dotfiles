@@ -2,11 +2,8 @@ update
 upgrade
 cleanup
 
-tap phinze/homebrew-cask || true
-install brew-cask
-
-tap homebrew/binary || true
-install packer
+install caskroom/cask/brew-cask || true
+install homebrew/binary/packer
 
 install python
 install gcc
@@ -31,6 +28,9 @@ install the_silver_searcher
 install mutt
 install imagemagick
 install ttyrec
+install ffmpeg
+install jq
+install go
 
 cask install iterm2
 cask install java
@@ -44,6 +44,7 @@ cask install dropbox
 cask install skitch
 
 # julia
-install gfortran
-tap staticfloat/julia
+install gcc
+tap staticfloat/julia || true
+tap homebrew/versions || true
 install --64bit julia
