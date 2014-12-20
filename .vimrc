@@ -69,6 +69,9 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
+NeoBundle 'haya14busa/incsearch.vim'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'Shutnik/jshint2.vim'
 
 filetype plugin indent on
 
@@ -85,6 +88,8 @@ if has('gui_running')
   set background=dark
   let g:solarized_termcolors=256
   colorscheme solarized
+else
+  colorscheme molokai
 endif
 
 command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))
@@ -182,3 +187,9 @@ autocmd BufNewFile,BufReadPost Dockerfile set filetype=sh
 
 set wrap
 let g:session_autosave = 'no'
+
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
+
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
