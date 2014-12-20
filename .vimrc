@@ -60,6 +60,7 @@ NeoBundle 'yoppi/fluentd.vim'
 NeoBundle 'chrisbra/Recover.vim'
 NeoBundle 'raichoo/purescript-vim'
 NeoBundle 'kurayama/systemd-vim-syntax'
+NeoBundle 'AndrewRadev/vim-eco'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 NeoBundle 'xolox/vim-session'
