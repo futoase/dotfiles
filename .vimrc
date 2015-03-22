@@ -80,6 +80,7 @@ NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'rust-lang/rust.vim'
 
 filetype plugin indent on
 
@@ -219,3 +220,5 @@ let g:neosnippet#enable_snipmate_compatibility=1
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+let g:session_autoload='no'
