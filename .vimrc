@@ -81,6 +81,10 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'moll/vim-node'
+NeoBundle 'rhysd/vim-crystal'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'udalov/kotlin-vim'
 
 filetype plugin indent on
 
