@@ -5,7 +5,10 @@ set PATH $PATH $HOME/local/packer /usr/local/opt/gnu-sed/libexec/gnubin
 set PATH $PATH $HOME/local/cocos2d-x-2.2.2/tools/project-creator
 set PATH $PATH /usr/local/bin
 set PATH $PATH $HOME/Library/Python/2.7/bin
+set PATH $PATH $HOME/google-cloud-sdk/bin
 set -x DOCKER_HOST 'tcp://localhost:4243'
+
+set -x LC_ALL ja_JP.UTF-8
 
 set -x EDITOR vim
 
