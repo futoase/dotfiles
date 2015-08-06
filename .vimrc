@@ -50,8 +50,10 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'JuliaLang/julia-vim'
 NeoBundle 'mklabs/grunt.vim'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rake'
+NeoBundle 'basyura/unite-rails'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'chase/vim-ansible-yaml'
@@ -70,6 +72,19 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
+NeoBundle 'haya14busa/incsearch.vim'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'Shutnik/jshint2.vim'
+NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'moll/vim-node'
+NeoBundle 'rhysd/vim-crystal'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'udalov/kotlin-vim'
 
 filetype plugin indent on
 
@@ -86,6 +101,8 @@ if has('gui_running')
   set background=dark
   let g:solarized_termcolors=256
   colorscheme solarized
+else
+  colorscheme molokai
 endif
 
 command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))
@@ -184,3 +201,29 @@ autocmd BufNewFile,BufReadPost Dockerfile set filetype=sh
 
 set wrap
 let g:session_autosave = 'no'
+
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
+
+imap <C-k>  <Plug>(neosnippet_expand_or_jump)
+smap <C-k>  <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>  <Plug>(neosnippet_expand_target)
+
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+      \ "\<Plug>(neosnippet_expand_or_jump)"
+      \: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+      \ "\<Plug>(neosnippet_expand_or_jump)"
+      \: "\<TAB>"
+
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+let g:neosnippet#enable_snipmate_compatibility=1
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+let g:session_autoload='no'

@@ -10,7 +10,7 @@ case ${UID} in
   PROMPT="%B%n%b%# "
   PROMPT2="%B%n%b%# "
   SPROMPT="%B%r is correct? [n,y,a,e]:%b%# "
-  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
     PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
   RPROMPT="[%~]"
   SPROMPT="correct: %R -> %r ? "
@@ -19,7 +19,7 @@ case ${UID} in
   PROMPT="%n%# "
   PROMPT2="%n%# "
   SPROMPT="%r is correct? [n,y,a,e]:%# "
-  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
     PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
   RPROMPT="[%~]"
   SPROMPT="correct: %R -> %r ? "
@@ -79,7 +79,7 @@ alias fullpath="find `pwd` -maxdepth 1 -mindepth 1"
 alias reload="source ~/.zshrc"
 
 # add datetime
-alias history="history -i" 
+alias history="history -i"
 
 alias vi="mvim"
 alias vim="mvim"
@@ -131,3 +131,5 @@ source ~/.fzf.zsh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.embulk/bin:$PATH"
+# dnvm
+source dnvm.sh
