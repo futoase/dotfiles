@@ -132,4 +132,4 @@ source ~/.fzf.zsh
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.embulk/bin:$PATH"
 # dnvm
-source dnvm.sh
+source ~/.dnx/dnvm/dnvm.sh
