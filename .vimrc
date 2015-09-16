@@ -22,7 +22,7 @@ filetype plugin indent off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 
 NeoBundle 'altercation/vim-colors-solarized'
@@ -85,10 +85,10 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'rhysd/vim-crystal'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'udalov/kotlin-vim'
-
+call neobundle#end()
 filetype plugin indent on
 
-set autoindent 
+set autoindent
 set shiftwidth=2
 set tabstop=2
 set expandtab
@@ -179,7 +179,7 @@ augroup spell_check
   autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
 augroup END
 
-au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
 let g:NERDTreeShowHidden=1
