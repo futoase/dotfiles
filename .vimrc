@@ -21,9 +21,16 @@ set spell
 filetype plugin indent off
 
 if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-  call neobundle#begin(expand('~/.vim/bundle/'))
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/syntastic'
@@ -85,8 +92,12 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'rhysd/vim-crystal'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'udalov/kotlin-vim'
+
 call neobundle#end()
+
 filetype plugin indent on
+
+NeoBundleCheck
 
 set autoindent
 set shiftwidth=2
