@@ -92,6 +92,7 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'rhysd/vim-crystal'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'udalov/kotlin-vim'
+NeoBundle 'tfnico/vim-gradle'
 
 call neobundle#end()
 
