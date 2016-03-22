@@ -16,89 +16,81 @@ set display=uhex
 set cursorline
 set spell
 
-"neobundle
-"
-filetype plugin indent off
-
-if has('vim_starting')
-  if &compatible
-    set nocompatible
-  endif
-
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible
 endif
+set runtimepath^=/Users/futoase/.vim/dein/repos/github.com/Shougo/dein.vim
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" Required:
+call dein#begin(expand('/Users/futoase/.vim/dein'))
+call dein#add('Shougo/dein.vim')
+call dein#add('altercation/vim-colors-solarized')
+call dein#add('scrooloose/syntastic')
+call dein#add('vim-scripts/opsplorer')
+call dein#add('vim-scripts/nginx.vim')
+call dein#add('leafgarland/typescript-vim')
+call dein#add('tsaleh/vim-matchit')
+call dein#add('ecomba/vim-ruby-refactoring')
+call dein#add('rking/ag.vim')
+call dein#add('jnwhiteh/vim-golang')
+call dein#add('Shougo/neocomplcache')
+call dein#add('vim-scripts/sudo.vim')
+call dein#add('Shougo/vimfiler')
+call dein#add('Shougo/unite.vim')
+call dein#add('scrooloose/nerdtree')
+call dein#add('tpope/vim-fugitive')
+call dein#add('Lokaltog/powerline')
+call dein#add('terryma/vim-multiple-cursors')
+call dein#add('elixir-lang/vim-elixir')
+call dein#add('honza/dockerfile.vim')
+call dein#add('nathanaelkane/vim-indent-guides')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('vim-ruby/vim-ruby')
+call dein#add('JuliaLang/julia-vim')
+call dein#add('mklabs/grunt.vim')
+call dein#add('tpope/vim-rails')
+call dein#add('tpope/vim-endwise')
+call dein#add('tpope/vim-bundler')
+call dein#add('tpope/vim-rake')
+call dein#add('basyura/unite-rails')
+call dein#add('dag/vim-fish')
+call dein#add('ekalinin/Dockerfile.vim')
+call dein#add('chase/vim-ansible-yaml')
+call dein#add('toyamarinyon/vim-swift')
+call dein#add('yoppi/fluentd.vim')
+call dein#add('chrisbra/Recover.vim')
+call dein#add('raichoo/purescript-vim')
+call dein#add('kurayama/systemd-vim-syntax')
+call dein#add('AndrewRadev/vim-eco')
+call dein#add('derekwyatt/vim-scala')
+call dein#add('mattn/gist-vim', {'depends': 'mattn/webapi-vim'})
+call dein#add('xolox/vim-session')
+call dein#add('xolox/vim-misc')
+call dein#add('Shougo/neosnippet')
+call dein#add('Shougo/neosnippet-snippets')
+call dein#add('cespare/vim-toml')
+call dein#add('dart-lang/dart-vim-plugin')
+call dein#add('octol/vim-cpp-enhanced-highlight')
+call dein#add('haya14busa/incsearch.vim')
+call dein#add('mxw/vim-jsx')
+call dein#add('Shutnik/jshint2.vim')
+call dein#add('AndrewRadev/switch.vim')
+call dein#add('lambdatoast/elm.vim')
+call dein#add('bronson/vim-trailing-whitespace')
+call dein#add('rking/ag.vim')
+call dein#add('honza/vim-snippets')
+call dein#add('rust-lang/rust.vim')
+call dein#add('moll/vim-node')
+call dein#add('rhysd/vim-crystal')
+call dein#add('junegunn/vim-easy-align')
+call dein#add('udalov/kotlin-vim')
+call dein#add('tfnico/vim-gradle')
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'vim-scripts/opsplorer'
-NeoBundle 'vim-scripts/nginx.vim'
-NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'ecomba/vim-ruby-refactoring'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'Shougo/vimfiler'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Lokaltog/powerline'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'honza/dockerfile.vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'JuliaLang/julia-vim'
-NeoBundle 'mklabs/grunt.vim'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-rake'
-NeoBundle 'basyura/unite-rails'
-NeoBundle 'dag/vim-fish'
-NeoBundle 'ekalinin/Dockerfile.vim'
-NeoBundle 'chase/vim-ansible-yaml'
-NeoBundle 'toyamarinyon/vim-swift'
-NeoBundle 'yoppi/fluentd.vim'
-NeoBundle 'chrisbra/Recover.vim'
-NeoBundle 'raichoo/purescript-vim'
-NeoBundle 'kurayama/systemd-vim-syntax'
-NeoBundle 'AndrewRadev/vim-eco'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
-NeoBundle 'xolox/vim-session'
-NeoBundle 'xolox/vim-misc'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'cespare/vim-toml'
-NeoBundle 'dart-lang/dart-vim-plugin'
-NeoBundle 'octol/vim-cpp-enhanced-highlight'
-NeoBundle 'haya14busa/incsearch.vim'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'Shutnik/jshint2.vim'
-NeoBundle 'AndrewRadev/switch.vim'
-NeoBundle 'lambdatoast/elm.vim'
-NeoBundle 'bronson/vim-trailing-whitespace'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'rust-lang/rust.vim'
-NeoBundle 'moll/vim-node'
-NeoBundle 'rhysd/vim-crystal'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'udalov/kotlin-vim'
-NeoBundle 'tfnico/vim-gradle'
-
-call neobundle#end()
+"if dein#check_install()
+"  call dein#install()
+"endif
 
 filetype plugin indent on
-
-NeoBundleCheck
 
 set autoindent
 set shiftwidth=2
