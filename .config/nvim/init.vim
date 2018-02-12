@@ -234,3 +234,9 @@ let g:go_fmt_autosave = 1
 " vim-flow
 "
 let g:flow#autoclose = 1
+
+" pyenv for python3
+let g:python3_host_prog = "/Users/futoase/.pyenv/shims/python3"
+
+" NERDTree tab open
+let g:nerdtree_tabs_open_on_console_startup=1
